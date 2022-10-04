@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".LoginActivity"
+        android:background="@color/white">
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="150dp" >-->
+
+<!--            <TextView-->
+<!--                android:text="Electric Vehicle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/fontColor"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/emailArea"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:hint="E-Mail"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:background="@drawable/custom_input" />
+
+            <EditText
+                android:id="@+id/passwordArea"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:background="@drawable/custom_input" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:textAllCaps="false"
+                android:text="로 그 인"
+                android:textStyle="bold"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
