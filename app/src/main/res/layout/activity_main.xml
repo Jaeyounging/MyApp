@@ -1,42 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.naver.maps.map.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </fragment>
+
+        <com.naver.maps.map.widget.LocationButtonView
+            android:id="@+id/navermap_location_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="130dp" />
 
         <EditText
+            android:id="@+id/search"
             android:layout_width="370dp"
-            android:layout_height="55dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/border5"/>
+            android:paddingStart="20dp"
+            android:background="@drawable/border2"
+            android:privateImeOptions="defaultInputmode=korean" />
+
+        <Button
+            android:id="@+id/areaSearch"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/border4"
+            android:text="검색"
+            android:textColor="#5D5D5D"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="27.5dp"
+            android:layout_marginRight="30dp"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/myLocation"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@drawable/border3"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginBottom="130dp"-->
+<!--            android:drawableLeft="@drawable/my_location"-->
+<!--            android:paddingStart="13dp"/>-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/fareTap"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/fare" />
+
+                <ImageView
+                    android:id="@+id/communityTap"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_community" />
+
+                <ImageView
+                    android:id="@+id/inquiryTap"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_chat" />
+
+                <ImageView
+                    android:id="@+id/mypageTap"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_mypage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="요금 안내"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="커뮤니티"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="문의"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="마이페이지"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
 
 
 
-    </RelativeLayout>
+            </LinearLayout>
 
-<!--    <Button-->
-<!--        android:id="@+id/logoutBtn"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="로그아웃"-->
-<!--        tools:ignore="MissingConstraints" />-->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            tools:ignore="MissingConstraints" />
 
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:navGraph="@navigation/main_nav" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/fragmentContainerView"-->
+    <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:defaultNavHost="true"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:navGraph="@navigation/main_nav" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

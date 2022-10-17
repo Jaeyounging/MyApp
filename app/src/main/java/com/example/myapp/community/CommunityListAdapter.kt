@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.myapp.R
-import kotlinx.coroutines.NonDisposableHandle.parent
 
 class CommunityListAdapter(val communityList : MutableList<CommunityModel>) : BaseAdapter() {
     override fun getCount(): Int {

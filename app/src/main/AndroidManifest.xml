@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapp">
-
     <!-- 위치 권한 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,13 +16,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
-        tools:targetApi="n">
+        android:usesCleartextTraffic="true">
 
-        <!-- APP KEY 설정 -->
+        <activity
+            android:name=".inquiry.ChatActivity"
+            android:exported="false" />
+
         <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="c6e340cd6c95d77a36183fc734afdfc0" />
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="4u7v3qgyl7" />
 
+        <activity
+            android:name=".inquiry.InquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".community.CommunityActivity"
+            android:exported="false" />
         <activity
             android:name=".community.CommunityInsideActivity"
             android:exported="false" />
@@ -34,19 +42,20 @@
             android:name=".community.CommunityWriteActivity"
             android:exported="false" />
         <activity
-            android:name=".JoinActivity"
+            android:name=".auth.JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".auth.IntroActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".auth.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

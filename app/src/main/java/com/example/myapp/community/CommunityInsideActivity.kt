@@ -6,7 +6,6 @@ import android.util.Log
 import androidx.databinding.DataBindingUtil
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityCommunityInsideBinding
-import com.example.myapp.fragments.CommunityFragment
 import com.example.myapp.util.FBRef
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -15,7 +14,7 @@ import com.google.firebase.database.ValueEventListener
 class CommunityInsideActivity : AppCompatActivity() {
     private lateinit var binding : ActivityCommunityInsideBinding
 
-    private val TAG = CommunityFragment::class.java.simpleName
+    private val TAG = CommunityActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -12,32 +12,50 @@
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/button_background.xml" value="0.1" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/button_radius.xml" value="0.2095" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/custom_input.xml" value="0.2095" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/fare.xml" value="0.2415" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_baseline_chat.xml" value="0.252" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_baseline_home.xml" value="0.2415" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_email.xml" value="0.2095" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2095" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_lock.xml" value="0.2095" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/message_box_background.xml" value="0.2305" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/my_location.xml" value="0.1975" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/person.xml" value="0.2305" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/plus_button.xml" value="0.252" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/receive_background.xml" value="0.2305" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/round_button.xml" value="0.2095" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/sendBtn.xml" value="0.2305" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/send_background.xml" value="0.2305" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/send_button.xml" value="0.2305" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/drawable/write_button.xml" value="0.252" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_board_write.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_community_inside.xml" value="0.4061855670103093" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_community.xml" value="0.25" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_community_inside.xml" value="0.1" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_community_write.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_data_test.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_inquiry.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_inquiry_list.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_intro.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_join.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_kakao_map.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_map_view.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_mypage.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_splach.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_splash.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_test.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/community_list_item.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_community.xml" value="0.33" />
-        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_home2.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_inquiry.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_my_page.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_search.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/recieve.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/send.xml" value="0.33" />
+        <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/layout/user_layout.xml" value="0.33" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1215" />
         <entry key="..\:/Users/Jaeyoung/AndroidStudioProjects/MyApp/app/src/main/res/xml/network_security_config.xml" value="0.36614583333333334" />
       </map>

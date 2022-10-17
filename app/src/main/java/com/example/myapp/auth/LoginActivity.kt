@@ -1,10 +1,12 @@
-package com.example.myapp
+package com.example.myapp.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import com.example.myapp.MainActivity
+import com.example.myapp.R
 import com.example.myapp.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -20,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
 
+        // 로그인 버튼 클릭 시
         binding.loginBtn.setOnClickListener() {
             val email = binding.emailArea.text.toString()
             val password = binding.passwordArea.text.toString()
