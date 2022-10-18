@@ -51,7 +51,7 @@ class ChatActivity : AppCompatActivity() {
                     messageList.clear()
 
                     for (postSnapshot in snapshot.children) {
-                        val message = postSnapshot.getValue(Message::class.java)
+                        val message = postSnapshot.getValue(Message::class.java)  // Message 형태로 데이터 받아오기
                         messageList.add(message!!)
                     }
                     messageAdapter.notifyDataSetChanged()
