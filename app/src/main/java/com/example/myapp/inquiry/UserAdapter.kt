@@ -28,7 +28,7 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>):
             val intent = Intent(context, ChatActivity::class.java)
 
             intent.putExtra("name", currentUser.name)
-            intent.putExtra("uid", FirebaseAuth.getInstance().currentUser?.uid)
+            intent.putExtra("uid", currentUser.uid)
             context.startActivity(intent)
         }
 
@@ -39,7 +39,7 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>):
     }
 
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textName = itemView.findViewById<TextView>(R.id.nameArea)
+        val textName = itemView.findViewById<TextView>(R.id.nameListArea)
     }
 
 }

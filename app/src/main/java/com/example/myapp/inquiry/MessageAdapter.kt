@@ -18,23 +18,23 @@ class MessageAdapter(val context: Context, val messegeList: ArrayList<Message>):
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         if (viewType == 1) {
             val view: View = LayoutInflater.from(context).inflate(R.layout.recieve, parent, false)
-            return ReceiveVidwHolder(view)
+            return ReceiveViewHolder(view)
         } else {
             val view: View = LayoutInflater.from(context).inflate(R.layout.send, parent, false)
-            return SendVidwHolder(view)
+            return SendViewHolder(view)
         }
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val currentMessage = messegeList[position]
 
-        if (holder.javaClass == SendVidwHolder::class.java) {
+        if (holder.javaClass == SendViewHolder::class.java) {
             // SendViewHolder
-            val viewHolder = holder as SendVidwHolder
+            val viewHolder = holder as SendViewHolder
 
             holder.sendMessage.text = currentMessage.message
         } else {
-            val viewHolder = holder as ReceiveVidwHolder
+            val viewHolder = holder as ReceiveViewHolder
 
             holder.receiveMessage.text = currentMessage.message
         }
@@ -43,10 +43,11 @@ class MessageAdapter(val context: Context, val messegeList: ArrayList<Message>):
     override fun getItemViewType(position: Int): Int {
         val currentMessage = messegeList[position]
 
+        // 현재 유저 아이디가 데이터베이스의 유저 아이디와 같다면
         if (FirebaseAuth.getInstance().currentUser?.uid.equals(currentMessage.senderId)) {
-            return ITEM_RECEIVE
+            return ITEM_SEND // 보내는 사람
         } else {
-            return ITEM_SEND
+            return ITEM_RECEIVE // 받는 사람
         }
     }
 
@@ -54,11 +55,11 @@ class MessageAdapter(val context: Context, val messegeList: ArrayList<Message>):
         return messegeList.size
     }
 
-    class SendVidwHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class SendViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val sendMessage = itemView.findViewById<TextView>(R.id.send_message_area)
     }
 
-    class ReceiveVidwHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class ReceiveViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val receiveMessage = itemView.findViewById<TextView>(R.id.receive_message_area)
     }
 }
