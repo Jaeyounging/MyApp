@@ -46,7 +46,8 @@ class ChatActivity : AppCompatActivity() {
         chatRecyclerView.adapter = messageAdapter
 
         // 리사이클러뷰에 채팅 데이터를 추가하는 로직
-        dBRef.child("chats").child(senderRoom!!).child("messages").addValueEventListener(object: ValueEventListener {
+        dBRef.child("chats").child(senderRoom!!).child("messages")
+            .addValueEventListener(object: ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     messageList.clear()
 
